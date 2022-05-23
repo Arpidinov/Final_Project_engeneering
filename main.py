@@ -112,7 +112,7 @@ class MainApp(App):
         #Clock.schedule_interval(self.move_bird, 1/60.)
         self.frames = Clock.schedule_interval(self.next_frame, 1/60.)
 
-        # Create the pipes
+        # Create the pipes and show them on the screen via configuring it on pipe.kv
         num_pipes = 5
         distance_between_pipes = Window.width / (num_pipes - 1)
         for i in range(num_pipes):
